@@ -1,0 +1,262 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+import Content from "~/components/widgets/Content.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import type { MetaData } from "~/types";
+
+const metadata: MetaData = {
+  title: "Dr. Bento Berilo - Especialista em Otorrino Pediatria",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="Dr. Bento Berilo"
+    tagline="Especialista em Otorrinolaringologia"
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="sobre-mim"
+    items={[
+      {
+        icon: "tabler:brand-instagram",
+        callToAction: {
+          text: "Instagram",
+          target: "_blank",
+          href: "https://instagram.com/bento_segundo",
+        },
+      },
+    ]}
+    image={{
+      src: "~/assets/images/logo.png",
+      alt: "Doutor Bento Berilo",
+    }}
+  >
+    <Fragment slot="content">
+      <h2
+        class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl"
+      >
+        Sobre Mim
+      </h2>
+      <p>
+        Desde o início da minha jornada na medicina, fui atraído pela
+        abrangência da otorrinolaringologia. A conexão entre o nariz, a garganta
+        e os ouvidos, e como essas áreas influenciam nossa saúde e bem-estar,
+        sempre me fascinou. Com o tempo, essa especialidade me permitiu lidar
+        com uma grande diversidade de casos, ajudando pacientes de todas as
+        idades a recuperar sua qualidade de vida.
+      </p>
+      <br />
+      <p>
+        Dentro dessa área, o ouvido ocupa um lugar especial na minha prática. A
+        cada paciente, renovo meu compromisso de proporcionar melhor qualidade
+        de vida, ajudando-os a redescobrir os sons que tornam o mundo tão rico e
+        envolvente.
+      </p>
+      <br />
+      <p>
+        Se tiver curiosidade em acompanhar meu trabalho, me siga nas redes
+        sociais:
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="curriculo"
+    title="Currículo"
+    items={[
+      {
+        title:
+          'Graduação em Medicina<br /> <span class="font-normal">Universidade Estadual do Maranhão</span> <br /> <span class="text-sm font-normal">2019</span>',
+        icon: "tabler:school",
+      },
+      {
+        title:
+          'Residência médica em Otorrinolaringologia<br /> <span class="font-normal">USP, Ribeirão Preto/SP</span> <br /> <span class="text-sm font-normal">2020-2023</span>',
+        icon: "tabler:first-aid-kit",
+      },
+      {
+        title:
+          'Título de Especialista em Otorrinolaringologia<br /> <span class="font-normal">ABORL-CCF</span> <br /> <span class="text-sm font-normal">2023</span>',
+        icon: "tabler:file-certificate",
+      },
+      {
+        title:
+          'Fellowship em Otologia e Cirurgia de base de Crânio<br /> <span class="font-normal">USP, Ribeirão Preto/SP</span> <br /> <span class="text-sm font-normal">2023 - 2024</span>',
+        icon: "tabler:briefcase",
+      },
+      {
+        title:
+          'Mestrado em Otorrinolaringologia<br /> <span class="font-normal">USP, Ribeirao Preto/SP, Brasil</span> <br /> <span class="text-sm font-normal">2023 - Presente</span>',
+        icon: "tabler:first-aid-kit",
+      },
+    ]}
+    classes={{ container: "max-w-3xl" }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="trabalhos"
+    title="Trabalhos Relevantes"
+    isReversed
+    items={[
+      {
+        icon: "tabler:download",
+        callToAction: {
+          text: "Download do Manual",
+          target: "_blank",
+          href: "/lavagem-nasal.pdf",
+        },
+      },
+    ]}
+    image={{
+      src: "~/assets/images/lavagem-nasal.png",
+      alt: "Capa do manual de Lavagem Nasal",
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
+        Manual de Lavagem Nasal em Crianças
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    items={[
+      {
+        title:
+          "Apresentação de trabalhos científicos no Congresso Europeu de Otorrinolaringologia Pediátrica",
+      },
+    ]}
+    image={{
+      src: "~/assets/images/trabalho-liverpool.jpeg",
+      alt: "Apresentando trabalho no Congresso Europeu de Otorrinolaringologia Pediátrica",
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
+        ESPO 2023, Liverpool
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title:
+          "Participação como uma das autoras no livro Otorrinolaringologia Pediátrica Atuação multiprofissional em crianças com distúrbios respiratórios do sono",
+      },
+    ]}
+    image={{
+      src: "~/assets/images/lancamento-livro.jpeg",
+      alt: "Fashion e-commerce Image",
+    }}
+  >
+    <Fragment slot="content">
+      <h3
+        class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl"
+      >
+        Lançamento do livro Otorrinolaringologia Pediátrica
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ************** -->
+  <Features3
+    id="cirurgias"
+    title="Cirurgias e Procedimentos"
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: "Remoção de Cerume e corpos estranhos(nariz, ouvido, garganta)",
+      },
+      {
+        title: "Nasofibroscopia Flexível",
+      },
+      {
+        title: "Nasofibroscopia Rígida",
+      },
+      {
+        title: "Videoendoscopia da deglutição",
+      },
+      {
+        title: "Frenectomia",
+      },
+      {
+        title: "Adenoidectomia",
+      },
+      {
+        title: "Amigdalectomia",
+      },
+      {
+        title: "Timpanotomia com colocação de tubo de ventilação",
+      },
+      {
+        title: "Biópsias e Microcirurgia de Laringe",
+      },
+      {
+        title: "Traqueostomia",
+      },
+      {
+        title: "Septoplastia e turbinectomia",
+      },
+      {
+        title: "Cirurgia endoscopia para tratamento de sinusite",
+      },
+      {
+        title: "Cirurgia endoscopia para o tratamento de perfuração timpanica",
+      },
+      {
+        title: "Mastoidectomia",
+      },
+      {
+        title: "Próteses auditivas cirúrgicas",
+      },
+      {
+        title: "Estapedotomia",
+      },
+      {
+        title: "Implante coclear",
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts id="blog" title="Blog" />
+</Layout>
