@@ -1,5 +1,15 @@
 ---
 import Image from "~/components/common/Image.astro";
+
+export interface Props {
+  width?: number;
+}
+
+const { width = 72 } = Astro.props;
 ---
 
-<Image src="~/assets/images/logo.png" alt="Logo Dr. Bento Berilo" width={72} />
+<Image
+  src="~/assets/images/logo.png"
+  alt="Logo Dr. Bento Berilo"
+  width={width}
+/>

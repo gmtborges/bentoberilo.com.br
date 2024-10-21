@@ -17,34 +17,31 @@ export const headerData = {
 export const footerData = {
   addresses: [
     {
-      title: "Pronto Clínica Pediátrica",
-      address: "Rua 83, 603. Setor Sul",
+      title: "Clínica Otorhinus",
+      address:
+        "Av. Rio Madeira, 380 - Nossa Senhora das Graças Manaus/AM - CEP: 69053-030",
       map: {
-        id: "pronto-clinica",
-        title: "Localização Pronto Clínica Pediátrica",
-        latlng: "Pronto+Clínica+Pediátrica/@-16.6841012,-49.2518424",
+        id: "clinica-otorhinus",
+        title: "Localização Clínica Otorhinus",
+        latlng:
+          "Otorhinus+Manaus+-+Otorrinolaringologista+em+Manaus/@-3.1064925,-60.0229435",
       },
       tel: [
         {
-          text: "(62) 3218-2722",
-          href: "tel:+556232182722",
+          text: "(92) 98451-6306",
+          href: "tel:+5592984516306",
         },
       ],
     },
     {
-      title: "Clínica Ver Crescer",
-      address:
-        "Av. Multirão com a Portugal, 1148, Setor Marista.<br />Ed. Órion Business & Health,<br />Sala 2707 C, 27º andar.",
+      title: "Clínica Otorrinosky",
+      address: "Av. Via Láctea, 11 - Aleixo, Manaus - AM, 69060-085",
       map: {
-        id: "clinica-vercrescer",
-        title: "Localização Clínica Ver Crescer",
-        latlng:
-          "Clinica+Ver+Crescer+Pediatria+e+Ultrassonografia/@-16.697015,-49.269493",
+        id: "clinica-otorrinosky",
+        title: "Localização Clínica Otorrinosky",
+        latlng: "Clinical+Otorhinolaryngology+Sky/@-3.0936697,-59.9986145",
       },
-      tel: [
-        { text: "(62) 9 9316-2918", href: "tel:+5562993162918" },
-        { text: "(62) 3626-4195", href: "tel:+556236264195" },
-      ],
+      tel: [{ text: "(92) 98210-4866", href: "tel:+5592982104866" }],
     },
   ],
   secondaryLinks: [
