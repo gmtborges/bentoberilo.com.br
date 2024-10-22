@@ -39,7 +39,7 @@ export const footerData = {
       map: {
         id: "clinica-otorrinosky",
         title: "Localização Clínica Otorrinosky",
-        latlng: "Clinical+Otorhinolaryngology+Sky/@-3.0936697,-59.9986145",
+        latlng: "Clinical+Otorhinolaryngology+Sky",
       },
       tel: [{ text: "(92) 98210-4866", href: "tel:+5592982104866" }],
     },
