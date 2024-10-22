@@ -51,6 +51,7 @@ export const footerData = {
     },
     // { text: 'Whatsapp +55 62 9', href: 'https://wa.me/55629' },
   ],
+  socialLinks: [],
   footNote: `
     Feito por <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://gmtborges.com/" target="_blank">gmtborges.com</a>
   `,
